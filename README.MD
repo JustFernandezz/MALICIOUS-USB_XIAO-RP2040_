@@ -1,3 +1,3 @@
-![Alt text](images/xiao.jpeg)
-![Alt text](images/xiao_rp2040_pins.png)
+![Alt text](Images/xiao.jpeg)
+![Alt text](Images/xiao_rp2040_pins.png)
 
