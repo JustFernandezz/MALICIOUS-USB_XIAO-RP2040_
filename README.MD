@@ -51,3 +51,6 @@ While <a href="https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob
 They are similar, just that the <a href="https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/uac_defender.py">uac_defender.py</a> is capable of accepting uac and disabling windows defender.
 
 Let's get started, shall we?
+
+# Setup #
+Navigate to <a href="https://circuitpython.org">Circuit_Python</a>, select Downloads and search for "xiao rp2040"
