@@ -53,4 +53,5 @@ They are similar, just that the <a href="https://github.com/JustFernandezz/MALIC
 Let's get started, shall we?
 
 # Setup #
-Navigate to <a href="https://circuitpython.org">Circuit_Python</a>, select Downloads and search for "xiao rp2040"
+Navigate to <a href="https://circuitpython.org">Circuit_Python</a>, website select Downloads and search for "xiao rp2040"
+
