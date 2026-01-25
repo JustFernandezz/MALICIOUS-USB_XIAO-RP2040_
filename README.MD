@@ -10,4 +10,5 @@
 
 # XIAO RP2040 MALICIOUS DRIVE #
 
-Hello guys, I go by the name <b>Fernandez</b>, and you can also call me the <b>Cyberlnkuei</b> 🥷😎
+Hello guys, I go by the name Fernandez, but you can call me CyberInkuei 🥷😎.
+This project is a BAS USB simulation built to showcase how simple-looking devices can become powerful tools for security testing, awareness, and defense.
