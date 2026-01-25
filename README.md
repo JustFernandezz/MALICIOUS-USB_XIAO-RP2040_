@@ -87,4 +87,15 @@ After you have it plugged in, you should see it as a drive on your computer
 Move the `adaruit.UF2` file we downloaded of recent to the drive. It is going to disconnect and restart itself after moving it.
 <img width="1200" height="246" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/7138cf57-3c98-4c13-a85d-85d4d16c33c2" />
 
+After restarting, you would have something like this:
+<img width="1747" height="796" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/6b68389d-cc53-45a2-8cf8-c87e82cb9ec7" />
+
+Next, go to the library file we downloaded `adafruit-circuitpython-bundle-10.x-mpy-20260124` and extract the content. Once you're done navigate to the `lib` directory in it and look for the folder `adafruit_hid` <img width="1725" height="854" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/0f4516e5-572a-4148-96d8-aba22640a671" />
+
+Then copy the folder to the lib directory in the XAIO RP2040 drive.
+<img width="1912" height="819" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/9edbda1f-ff17-47ff-a3ad-4b36fc21fd11" />
+
+
+
+
 
