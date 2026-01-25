@@ -71,7 +71,14 @@ The scripts are similar, but `uac_defender.py` includes UAC handling and Defende
 
 ## Setup
 
-Navigate to [CircuitPython](https://circuitpython.org), select **Downloads**, and search for **XIAO RP2040**.
+Navigate to [CircuitPython](https://circuitpython.org), select **Downloads**, and search for **XIAO RP2040**. and select the first one "RP2040"
+
+<img width="1920" height="875" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/64d9e929-46f9-4584-884b-fec0aa600928" />
+
+Download the `.UF2` file
+<img width="1920" height="955" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/4914e0e9-6dfd-4baf-bf00-3dfe8a98a8a2" />
+
+
 
 
 
