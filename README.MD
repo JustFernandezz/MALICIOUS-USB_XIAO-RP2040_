@@ -15,7 +15,13 @@ This project is a BAD USB simulation built to showcase how simple-looking device
 
 The Bad USB functions as a Human Interface Device (HID), allowing it to emulate a keyboard and execute keystrokes on a computer within seconds. While this capability is often abused for malicious purposes, it also makes Bad USB devices valuable tools for security research, awareness, and attack simulation.
 
-For this project, we’ll be using the XIAO RP2040 microcontroller as the foundation of our Bad USB build. You can purchase the board from
+For this project, we’ll be using the XIAO RP2040 microcontroller as the foundation of our Bad USB build, which will be programmed using CircuitPython. You can purchase the board from
 👉 <a href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html?srsltid=AfmBOop0VZ_jHX3hqeEwixS7_KCj41w8qmIfnBCEUeNWxq647FOvcWkS">Seeed Studio</a>
 or
 👉 <a href="https://www.microscale.net/?srsltid=AfmBOoooYjyeR2MXf-PNIm0P0SWP6HJNdi7z7AktNsc88h1k5MQf68Tw">Microscale</a> (for those based in Nigeria).
+
+# Requirement #
+<li>XIAO RP2040</li>
+<li>A dedicated Server(Local system or hosted in the cloud) </li>
+
+I have a dedicated server hosted in the cloud which gives me a public IP address and let's my targets connect to me from anywhere in the world, but requires some configuration which I'm going to show you.
