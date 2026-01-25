@@ -78,9 +78,13 @@ Navigate to [CircuitPython](https://circuitpython.org), select **Downloads**, an
 Download the `.UF2` file
 <img width="1920" height="955" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/4914e0e9-6dfd-4baf-bf00-3dfe8a98a8a2" />
 
-Now, it's time to plug in the board with a type c cable, but before that, hold the <b>B</b> button on the board for few seconds while at the same timme you plug in the device to the computer. The B button is located by the bottom right of the device in the image below
+Now, it's time to plug in the board with a type c cable, but before that, hold the <b>B</b> button on the board for few seconds while at the same timme you plug in the device to the computer to factory reset it. The B button is located by the bottom right of the device in the image below
 ![XIAO RP2040](Images/xiao.jpeg)
 
 After you have it plugged in, you should see it as a drive on your computer
+<img width="1920" height="774" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/12dc3070-2487-4145-858a-dbc1e7637e9d" />
+
+Move the `adaruit.UF2` file we downloaded of recent to the drive. It is going to disconnect and restart itself after moving it.
+<img width="1200" height="246" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/7138cf57-3c98-4c13-a85d-85d4d16c33c2" />
 
 
