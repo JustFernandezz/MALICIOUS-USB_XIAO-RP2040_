@@ -10,4 +10,4 @@
 
 # XIAO RP2040 MALICIOUS DRIVE #
 
-Hello guys, I go be the name Fernandez, and you can also call me the Cyberlnkuei.
+Hello guys, I go by the name Fernandez, and you can also call me the Cyberlnkuei.
