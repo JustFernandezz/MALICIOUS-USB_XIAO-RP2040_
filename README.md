@@ -78,7 +78,9 @@ Navigate to [CircuitPython](https://circuitpython.org), select **Downloads**, an
 Download the `.UF2` file
 <img width="1920" height="955" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/4914e0e9-6dfd-4baf-bf00-3dfe8a98a8a2" />
 
+Now, it's time to plug in the board with a type c cable, but before that, hold the # B # button on the board for few seconds while at the same timme you plug in the device to the computer. The B button on the bottom right of the image below
+![XIAO RP2040](Images/xiao.jpeg)
 
-
+After you have it plugged in, you should see it as a drive on your computer
 
 
