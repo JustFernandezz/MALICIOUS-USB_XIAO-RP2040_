@@ -35,5 +35,17 @@ The goal of this project is to:
 - Schedule the backdoor to run as a task on the victim's machine to maintain persistence almost forever
 - Lastly, disable windows defender.
 
+# Scripts #
+I wrote two different scripts for almost the samething. <a href="https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/Base_run.py">Base_run.py</a> does the following:
+- Exfiltrates every wifi ssid and password from the victim's machine and forward it to our server
+- Injects a backdoor that gives us a remote shell
+- Schedules the backdoor to run as a task on the victim's machine to maintain persistence almost forever.
+- Opens a youtube video on the browser for distraction
 
+While <a href="https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/uac_defender.py">uac_defender.py</a> does the following:
+- Opens powershell as admin and exfiltrates every wifi ssid and password from the victim's machine and forward it to our server
+- Inject a backdoor that gives us a remote shell
+- Schedule the backdoor to run as a task on the victim's machine to maintain persistence almost forever
+- Accepts UAC and Disables windows defender.
 
+They are similar, just that the <a href="https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/uac_defender.py">uac_defender.py</a> is capable of accepting uac and disabling windows defender.
