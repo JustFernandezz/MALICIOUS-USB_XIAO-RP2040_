@@ -27,3 +27,13 @@ or
 
 I already have a dedicated server hosted in the cloud which gives me a public IP address and allows the targets connect to me from anywhere in the world, but requires some configuration which I'm going to show you.
 
+# Goal #
+
+The goal of this project is to:
+- Exfiltrate every wifi ssid and password from the victim's machine and forward it to our server
+- Inject a backdoor that gives us a remote shell
+- Schedule the backdoor to run as a task on the victim's machine to maintain persistence almost forever
+- Lastly, disable windows defender.
+
+
+
