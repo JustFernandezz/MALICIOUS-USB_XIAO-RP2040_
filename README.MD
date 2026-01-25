@@ -25,7 +25,6 @@ or
 <li>A dedicated Server(Local system or hosted in the cloud) </li>
 
 
-
-
-
 I have a dedicated server hosted in the cloud which gives me a public IP address and let's my targets connect to me from anywhere in the world, but requires some configuration which I'm going to show you.
+
+dd
