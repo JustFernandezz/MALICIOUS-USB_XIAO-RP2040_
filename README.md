@@ -95,7 +95,7 @@ Next, go to the library file we downloaded `adafruit-circuitpython-bundle-10.x-m
 Then copy the folder to the lib directory in the XAIO RP2040 drive.
 <img width="1912" height="819" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/9edbda1f-ff17-47ff-a3ad-4b36fc21fd11" />
 
-Going back to the root of the XAIO RP2040, you will see python script, this is where our code would be stored and that's where we do the programming. I have it programmed for you already, so you can just replace the python script with the one I've written and modify the ip address and anything that needs to modified to match your environment.
+Going back to the root of the XAIO RP2040, you will see python script, this is where our code would be stored and that's where we do the programming. I have it programmed for you already, so you can just replace the python script with the one I've written and modify the ip address and anything that needs to modified to match your environment. Also make sure the script is renamed to `code.py`
 <img width="1747" height="796" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/6b68389d-cc53-45a2-8cf8-c87e82cb9ec7" />
 
 Before we continue, let's see the config on the attacker server running in the cloud.
