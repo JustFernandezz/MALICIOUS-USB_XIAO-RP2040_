@@ -101,3 +101,17 @@ Going back to the root of the XAIO RP2040, you will see python script, this is w
 Before we continue, let's see the config on the attacker server running in the cloud.
 
 # Attacker Server #
+We would like our attack to be successful irrespective of the network the target is on and wherever he is in the world. We don't want a situation whereby it only works when we are within the same network, therefore, I provisioned a server already in the cloud that listens for inbound and outbound connections with an available public IP Address.
+
+You can come here [EC2 Server](https://us-east-1.console.aws.amazon.com/) to create a cloud Instance in AWS.
+
+After creating an instance, navigate to security groups and configure an inbound allow rule for these ports and also an outbound for all ports
+
+<img width="1618" height="298" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/d06b2b8f-9f90-4a3b-b76b-8c5762766ef5" />
+
+<img width="1628" height="278" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/7fba9caa-05ca-4b9b-988e-ae7478acff4b" />
+
+<img width="1649" height="235" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/1b3d0854-d030-41be-bec2-5b0c9179c640" />
+
+
+
