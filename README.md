@@ -107,11 +107,22 @@ You can come here [EC2 Server](https://us-east-1.console.aws.amazon.com/) to cre
 
 After creating an instance, navigate to security groups and configure an inbound allow rule for these ports and also an outbound for all ports
 
+INBOUND:
 <img width="1618" height="298" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/d06b2b8f-9f90-4a3b-b76b-8c5762766ef5" />
 
 <img width="1628" height="278" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/7fba9caa-05ca-4b9b-988e-ae7478acff4b" />
 
+OOUTBOUND:
 <img width="1649" height="235" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/1b3d0854-d030-41be-bec2-5b0c9179c640" />
+
+Why we need the ports?
+5555 - Our server will use this to listen for wifi credentials
+3333 - To listen for a reverse connection.
+22 - We use this to remotely connect to our machine
+443 - HTTPS
+53 - DNS(Should be open)
+80 - To host our reverse shell
+(Ignore port 4444).
 
 
 
