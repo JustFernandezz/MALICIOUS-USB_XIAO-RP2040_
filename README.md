@@ -116,12 +116,19 @@ OOUTBOUND:
 <img width="1649" height="235" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/1b3d0854-d030-41be-bec2-5b0c9179c640" />
 
 Why we need the ports?
+
 5555 - Our server will use this to listen for wifi credentials
+
 3333 - To listen for a reverse connection.
+
 22 - We use this to remotely connect to our machine
+
 443 - HTTPS
+
 53 - DNS(Should be open)
+
 80 - To host our reverse shell
+
 (Ignore port 4444).
 
 
