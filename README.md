@@ -152,7 +152,11 @@ For testing, run: `tmux new-s -d -s pythonserver1`, which creates a new tmux ses
 
 We can see the list all of the active sessions using `tmux list-s`. To interact with each session, type `tmux attach -t <session name>`, in our case pythonserver1, so it's going to be `tmux attach -t pythonserver1`.
 
-To opt out of the session without tearing it down, you press `CTR + B + D`, which keeps your program running in a background and you can close the terminal. Also if you want to quit the session or tear it down, just press `CTR + C`, then the session ends
+To opt out of the session without tearing it down, you press `CTR + B + D`, which keeps your program running in a background and you can close the terminal. Also if you want to quit the session or tear it down, just press `CTR + C`, then the session ends.
+
+We will be using netcat to listen for reverse connections from the target, and by default, netcat tears down sessions after one successful connection. Also, running netcat as a cronjob does not run in the foreground, so there's no way you can interact with each session, and that's not what we want as a creative attacker. We need tmux for that.
+
+
 
 
 
