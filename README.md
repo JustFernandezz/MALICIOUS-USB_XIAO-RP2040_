@@ -161,7 +161,9 @@ We want to add a cronjob that creates a netcat connection with tmux that listens
 
 Finally, we can host a python server in the directory where we have our reverse shell and wifilogger scripts:
 
-<img width="1165" height="129" alt="Screenshot (79)" src="https://github.com/user-attachments/assets/3568b9d5-2d87-426e-a9d4-4b7ed6026ae9" />
+<img width="1920" height="900" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/8c28c7df-fd2d-4bcf-a8c7-99c4bd1d6ef3" />
+<img width="1920" height="579" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/c70ce943-35f0-4aa6-b44f-dd5ff5810ac6" />
+
 
 ⚠️ Make sure you don't have an important thing in that directory before hosting public, and make sure you have your services very secure. 
 
