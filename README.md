@@ -131,5 +131,14 @@ Why we need the ports?
 
 (Ignore port 4444).
 
+After configuring our firewall rules, we can now start the instance and login to the machine. We need to do a few things inside the machine to make the attack standout. Let's take them one after the other.
+
+Firstly, create a directory in your /home/user/<directory name>, and copy the [Revshell.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/ReverseShell.ps1) and [Wifilogger.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/Wifilogger.ps1) files there. We would be hosting these files publicly and let the target execute it in memory without having to download locally(It runs pretty fast), using IEX and IWR, which are some Living Off The Land Binaries (LOLBAS). We also don't want our entire filesystem to be publicly exposed, so we create a sub directory where we puth these files.
+
+That being said, modify the ip address to match your instance and we are done with the first stage.
+
+
+
+
 
 
