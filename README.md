@@ -133,10 +133,20 @@ Why we need the ports?
 
 After configuring our firewall rules, we can now start the instance and login to the machine. We need to do a few things inside the machine to make the attack standout. Let's take them one after the other.
 
-Firstly, create a directory in your /home/user/<directory name>, and copy the [Revshell.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/ReverseShell.ps1) and [Wifilogger.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/Wifilogger.ps1) files there. We would be hosting these files publicly and let the target execute it in memory without having to download locally(It runs pretty fast), using IEX and IWR, which are some Living Off The Land Binaries (LOLBAS). We also don't want our entire filesystem to be publicly exposed, so we create a sub directory where we puth these files.
+Firstly, create a directory in your /home/user/<directory name>, and copy the [Revshell.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/ReverseShell.ps1) and [Wifilogger.ps1](https://github.com/JustFernandezz/MALICIOUS-USB_XIAO-RP2040_/blob/main/Wifilogger.ps1) files there. We would be hosting these files publicly and let the target execute it in memory without having to download locally(It runs pretty fast without AV detection), using IEX and IWR, which are some Living Off The Land Binaries (LOLBAS). We also don't want our entire filesystem to be publicly exposed, so we create a sub directory where we puth these files.
 
-That being said, modify the ip address to match your instance and we are done with the first stage.
+Like I have done here, the files are in a directory named `connect`.
+<img width="1366" height="120" alt="Screenshot (76)" src="https://github.com/user-attachments/assets/0f3b04db-293b-4974-b201-ae922b762c98" />
 
+That being said, modify the ip address of those files to match your instance ip and we are done with the first stage.
+
+Next thing is to install tmux, tmux helps us to hold multiple terminal sessions without tearing down the session. Normally, whenever you run a program such as `python3 -m http.server` or anything that requires an active session, whenever you close the terminal, everything tears down, but with tmux, it let's your program keep running even when you close the terminal, and it provides a way to interact with each sessions you hold. 
+
+You can install tmux with the following commands:
+
+<li>sudo apt update</li>
+
+<li>sudo apt install tmux</li>
 
 
 
