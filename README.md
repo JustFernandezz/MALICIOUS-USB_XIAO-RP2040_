@@ -156,6 +156,8 @@ To opt out of the session without tearing it down, you press `CTR + B + D`, whic
 
 We will be using netcat to listen for reverse connections from the target, and by default, netcat tears down sessions after one successful connection. Also, running netcat as a cronjob does not run in the foreground, so there's no way you can interact with each session, and that's not what we want as a creative attacker. We need tmux for that.
 
+We cant to add a cronjob that creates a netcat connection that listens for wifi credentials and reverse shell every 1 minute even after tear down. With this, even if the netcat connection stops, it reconnects back after every 1 minute.
+<img width="1468" height="179" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/df86c81e-daf3-45cf-95ca-75a52ff0659b" />
 
 
 
